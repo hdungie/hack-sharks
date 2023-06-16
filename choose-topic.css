@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFE5EC;
+    background-image: url('log-in.jpg');
+    background-size: cover;
+}
+
+.select{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.select_item{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    background: #ffffff;
+    transition: 0.1s;
+    font-size: 14px;
+    box-shadow: 
+    0 1px 2px rgba(0,0,0,0.02),
+    0 -1px 2px rgba(0,0,0,0.02),
+    1px 0 2px rgba(0,0,0,0.02),
+    -1px 0 2px rgba(0,0,0,0.02),
+    0 2px 2px rgba(0,0,0,0.02),
+    0 -2px 2px rgba(0,0,0,0.02),
+    2px 0 2px rgba(0,0,0,0.02),
+    -2px 0 2px rgba(0,0,0,0.02),
+    0 2px 8px rgba(0,0,0,0.02),
+    0 -2px 8px rgba(0,0,0,0.02),
+    2px 0 8px rgba(0,0,0,0.02),
+    -2px 0 8px rgba(0,0,0,0.02),
+    0 8px 4px rgba(0,0,0,0.02),
+    0 -8px 4px rgba(0,0,0,0.02),
+    8px 0 4px rgba(0,0,0,0.02),
+    -8px 0 4px rgba(0,0,0,0.02),
+    0 4px 8px rgba(0,0,0,0.02),
+    0 -4px 8px rgba(0,0,0,0.02),
+    4px 0 8px rgba(0,0,0,0.02),
+    -4px 0 8px rgba(0,0,0,0.02),
+    0 8px 4px rgba(0,0,0,0.02),
+    0 -8px 4px rgba(0,0,0,0.02);
+}
+
+.select_item--selected{
+    background: #F59FAC;
+}
+
+.next_button {
+    text-align: right;
+}
+
+.button {
+    margin-right: 50px;
+    background: #F59FAC;
+    border: 0;
+    border-radius: 12px;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+  }
+  
+  .button:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+  .button:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }

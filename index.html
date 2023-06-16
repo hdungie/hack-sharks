@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
-</head>
-        
-<body>
-    <div class="row">
-        <div class="column"><p>column 1 </p></div>
-        <div class="column"><p>column 2</p></div>
-    </div>
+  <meta name="sign-up" content="width=device-width, initial-scale=1">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins');
+    * {
+      box-sizing: border-box;
+    }
 
-    <p> Create an account</p>
-    
+    .column {
+      float: left;
+      padding: 10px;
+      height: 100%;
+      width: 80%;
+    }
+
+    .left {
+      width: 50%;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      padding: 70px 0;
+    }
+
+    .right {
+      width: 50%;
+      text-align: left;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+  <link rel="stylesheet" href="log-in.css">
+</head>
+<body>
+
+<div class="row">
+
+  <div class="column left" style="background-color: #FFFFFF;">
+    <h1 style="font-family: Satisfy; font-size: 40px;"> Paper Pulse </h1>
+    <!-- <p> Welcome to Paper Pulse </p> -->
+    <!-- <h3>Log in </h3> -->
+
     <div class="form__group field">
-        <input type="input" class="form__field" name="username" id='username' required="required"/>
-        <label for="name" class="form__label">User name</label>
+      <input type="input" class="form__field" name="username" id='username' required="required"/>
+      <label for="name" class="form__label">User name</label>
     </div>
 
     <div class="form__group field">
@@ -26,14 +59,24 @@
         <button class="forgot_button" role="button"> Forgot password?</button>
     </div>
 
-    <button class="button" role="button"> Sign up</button>
+    <p> </p>
+    <div class="login_button">
+      <button class="button" role="button"> Log in</button>
+    </div>
+    <p></p>
 
-    <small> Already have an account?
-        <div class="btn">
-            <button class="forgot_button" role="button">Log in</button>
-        </div>
-    </small>
+    <div>
+      <small> Don't have an account? </small>
+      <a href="sign-up.html"  id="sign-up-link">Sign up.</a>
+    </div>
+    
+  </div>
+
+  <div class="column right">
+    <img src="log-in.jpg" width="500px" height="500px">
+  </div>
+
+</div>
 
 </body>
 </html>
-

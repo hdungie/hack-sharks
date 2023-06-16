@@ -1,21 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy');
 
-.column {
-    float: left;
-    width: 50%;
-  }
-  
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+#sign-up-link {
+  font-size: 14px; /* Adjust the desired font size */
+  color: #6667FF; /* Adjust the desired font color */
+  /* Add any other desired styles */
+}
+
+.btn {
+    text-align: right;
+    width: 60%;
+    margin: auto;
+}
+
+.login_button {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
 
 .form__group {
   position: relative;
   padding: 15px 0 0;
   margin-top: 10px;
-  width: 50%;
+  margin-bottom: 10px;
+  width: 60%;
+  text-align: center;
+  align-content: center;
+  margin: auto
 }
 
 .form__field {
@@ -24,7 +36,7 @@
   border: 0;
   border-bottom: 2px solid gray;
   outline: 0;
-  font-size: 1.3rem;
+  font-size: 16px;
   color: #000000;
   padding: 7px 0;
   background: transparent;
@@ -35,7 +47,7 @@
   }
 
   &:placeholder-shown ~ .form__label {
-    font-size: 1.3rem;
+    font-size: 14px;
     cursor: text;
     top: 20px;
   }
@@ -46,7 +58,7 @@
   top: 0;
   display: block;
   transition: 0.2s;
-  font-size: 1rem;
+  font-size: 14px;
   color: #808080;
 }
 
@@ -57,37 +69,26 @@
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-    color: #FF2B63;
+    color: #3F479C;
     font-weight:700;    
   }
   padding-bottom: 6px;  
   font-weight: 700;
   border-width: 3px;
-  border-image: linear-gradient(to right, #FF2B63,#6667FF);
+  border-image: linear-gradient(to right, #F59FAC, #9090CD);
   border-image-slice: 1;
 }
 /* reset input */
 .form__field{
   &:required,&:invalid { box-shadow:none; }
 }
-/* demo */
-body {
-  font-family: 'Poppins', sans-serif; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  font-size: 1.5rem;
-}
 
 .button {
-  background: linear-gradient(to bottom right, #FF2B63, #6667FF);
+  background: linear-gradient(to bottom right, #F59FAC, #9090CD);
   border: 0;
   border-radius: 12px;
   color: #FFFFFF;
   cursor: pointer;
-  display: inline-block;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -115,7 +116,6 @@ body {
     background: transparent;
     border: 0;
     border-radius: 6px;
-    display: inline;
     color: #808080;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
@@ -124,13 +124,12 @@ body {
     line-height: 2.5;
     outline: transparent;
     padding: 0 1rem;
-    float: right;
   }
   
   .forgot_button:not([disabled]):focus {
-    color: #FF2B63;
+    color: #F59FAC;
   }
   
   .forgot_button:not([disabled]):hover {
-    color: #FF2B63;
+    color: #F59FAC;
   }

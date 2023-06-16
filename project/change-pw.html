@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="choose-topic" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="profile-page.css">
+        <script src='https://kit.fontawesome.com/de52ddf5ac.js' crossorigin='anonymous'></script>
+    </head>
+    <body>
+            <nav>
+                <div class="nav-content">
+                    <div class="logo" style="display: flex">
+                        <h1 style="font-family: 'Satisfy', sans-serif; font-size: 25px;">Paper Pulse<h1>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="home-page.html">Home</a></li>
+                        <li><a href="about-page.html">About</a></li>
+                        <li><a href="preferences-page.html">Preferences</a></li>
+                        <li><a href="profile-page.html">Profile</a></li>
+                        <li><a href="contact-page.html">Contact</a></li>
+                        <li><a href="log-in.html"><i class="fa-solid fa-right-from-bracket" style="font-size: 15px;"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <div class="column left" style="background-color: #FFFFFF; margin: auto; text-align: center;
+            border: 5px double white; border-radius: 12px; width: 90%; margin: auto; 
+            box-shadow: 
+            0 1px 2px rgba(0,0,0,0.02),
+            0 -1px 2px rgba(0,0,0,0.02),
+            1px 0 2px rgba(0,0,0,0.02),
+            -1px 0 2px rgba(0,0,0,0.02),
+            0 2px 4px rgba(0,0,0,0.02),
+            0 -2px 4px rgba(0,0,0,0.02),
+            2px 0 4px rgba(0,0,0,0.02),
+            -2px 0 4px rgba(0,0,0,0.02),
+            0 4px 8px rgba(0,0,0,0.02),
+            0 -4px 8px rgba(0,0,0,0.02),
+            4px 0 8px rgba(0,0,0,0.02),
+            -4px 0 8px rgba(0,0,0,0.02),
+            0 8px 16px rgba(0,0,0,0.02),
+            0 -8px 16px rgba(0,0,0,0.02),
+            8px 0 16px rgba(0,0,0,0.02),
+            -8px 0 16px rgba(0,0,0,0.02),
+            0 16px 32px rgba(0,0,0,0.02),
+            0 -16px 32px rgba(0,0,0,0.02),
+            16px 0 32px rgba(0,0,0,0.02),
+            -16px 0 32px rgba(0,0,0,0.02),
+            0 32px 64px rgba(0,0,0,0.02),
+            0 -32px 64px rgba(0,0,0,0.02);">
+
+                <div class="text" style="text-align: center;">
+                    <div style="text-align: center;"><h3>Profile</h3></div>
+
+                    <div style="display: flex; align-items: center; justify-content: center; text-align: center;"> 
+                        <div class="form__group field" style="margin-bottom: 10px;" style="display: flex;">
+                            <input type="password" class="form__field" name="new_pw" id='new_pw' required/>
+                            <label for="new_pw" class="form__label">New password <span style="color: red;">*</span></label>
+                        </div>
+                        <button class="edit-button" style="background: none; border: none; font-size: 16px;"><i class="fa-solid fa-eye"></i></button>
+                    </div>
+
+                    <div style="display: flex; align-items: center; justify-content: center; text-align: center;"> 
+                        <div class="form__group field" style="margin-bottom: 10px;">
+                            <input type="password" class="form__field" name="cf_pw" id='cf_pw' required/>
+                            <label for="password" class="form__label">Confirm new password <span style="color: red;">*</span></label>
+                        </div>
+                        <button class="edit-button" style="background: none; border: none; font-size: 16px;"><i class="fa-solid fa-eye"></i></button>
+                    </div>
+
+                    <p style="color: white;"> hehe </p>
+
+                    <div style="display: flex; align-items: center; justify-content: center; text-align: center;"> 
+                        <div class="form__group field" style="margin-bottom: 10px;">
+                            <input type="password" class="form__field" name="cf_pw" id='cf_pw' required/>
+                            <label for="password" class="form__label">Old password <span style="color: red;">*</span></label>
+                        </div>
+                        <button class="edit-button" style="background: none; border: none; font-size: 16px;"><i class="fa-solid fa-eye"></i></button>
+                    </div>
+
+                    <p style="color: white;"> hehe </p>
+
+                    <div class="change_button" style="text-align: center;">
+                        <a href="profile-page.html" type="button" class="button" role="button" style="font-size: 13px;">Cancel</a>
+                        <input type="submit" class="button" style="font-size: 13px;">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <script>
+                let nav = document.querySelector("nav");
+                window.onscroll = function() {
+                    if(document.documentElement.scrollTop > 20){
+                    nav.classList.add("sticky");
+                    }else {
+                    nav.classList.remove("sticky");
+                    }
+                }
+
+                // document.querySelectorAll("input").forEach(input_field => {
+                //     if (input_field.classList.contains("readonly")) {
+                //         input_field.style.color = "grey"
+                //     }
+                //     else {
+                //         input_field.style.backgroundColor = "#ededed"
+                //     }
+                // });
+            </script>
+
+            <script src="change-pw.js"></script>
+        </div>
+    </body>

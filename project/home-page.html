@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="choose-topic" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="home-page.css">
+        <script src='https://kit.fontawesome.com/de52ddf5ac.js' crossorigin='anonymous'></script>
+    </head>
+    <body>
+            <nav>
+                <div class="nav-content">
+                    <div class="logo" style="display: flex">
+                        <h1 style="font-family: 'Satisfy', sans-serif; font-size: 25px;">Paper Pulse<h1>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="home-page.html">Home</a></li>
+                        <li><a href="about-page.html">About</a></li>
+                        <li><a href="preferences-page.html">Preferences</a></li>
+                        <li><a href="profile-page.html">Profile</a></li>
+                        <li><a href="contact-page.html">Contact</a></li>
+                        <li><a href="log-in.html"><i class="fa-solid fa-right-from-bracket" style="font-size: 15px;"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <div class="column left" style="background-color: #FFFFFF; margin: auto; text-align: center;
+            border: 5px double white; border-radius: 12px; width: 90%; margin: auto; 
+            box-shadow: 
+            0 1px 2px rgba(0,0,0,0.02),
+            0 -1px 2px rgba(0,0,0,0.02),
+            1px 0 2px rgba(0,0,0,0.02),
+            -1px 0 2px rgba(0,0,0,0.02),
+            0 2px 4px rgba(0,0,0,0.02),
+            0 -2px 4px rgba(0,0,0,0.02),
+            2px 0 4px rgba(0,0,0,0.02),
+            -2px 0 4px rgba(0,0,0,0.02),
+            0 4px 8px rgba(0,0,0,0.02),
+            0 -4px 8px rgba(0,0,0,0.02),
+            4px 0 8px rgba(0,0,0,0.02),
+            -4px 0 8px rgba(0,0,0,0.02),
+            0 8px 16px rgba(0,0,0,0.02),
+            0 -8px 16px rgba(0,0,0,0.02),
+            8px 0 16px rgba(0,0,0,0.02),
+            -8px 0 16px rgba(0,0,0,0.02),
+            0 16px 32px rgba(0,0,0,0.02),
+            0 -16px 32px rgba(0,0,0,0.02),
+            16px 0 32px rgba(0,0,0,0.02),
+            -16px 0 32px rgba(0,0,0,0.02),
+            0 32px 64px rgba(0,0,0,0.02),
+            0 -32px 64px rgba(0,0,0,0.02);">
+
+                <div class="text">
+                <p><h2>Articles sent</h2>
+
+                <div class="card">
+                    <img src="sign-up.jpg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                      <h4><b>IEEE</b> - Technology </h4>
+                      <p>The Performance Evaluation of Hi-Fi Interconnection Systems</p>
+                      <div style="text-align: center;"> <p style="color: gray; font-size: 12px;"> Sent on Thu, Jun 15 12:30pm</p> </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+
+            <script>
+                let nav = document.querySelector("nav");
+                window.onscroll = function() {
+                    if(document.documentElement.scrollTop > 20){
+                    nav.classList.add("sticky");
+                    }else {
+                    nav.classList.remove("sticky");
+                    }
+                }
+            </script>
+        </div>
+    </body>

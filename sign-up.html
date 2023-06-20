@@ -78,9 +78,32 @@
 
             <div style="text-align: center; font-size: 13px;"><p>Fields with <span style="color: red;">*</span> are required.</p></div>
 
-            <a href="choose-topic.html" type="button" class="button" role="button" style="font-size: 15px; padding: 10px 18px;">Sign Up</a>
+            <a href="choose-topic.html" type="button" class="button" role="button" style="font-size: 15px; padding: 10px 18px;" onclick="return validateForm();">Sign Up</a>
 
             <p></p>
+
+            <script>
+                function validateForm() {
+                    var firstName = document.getElementById("first_name").value;
+                    var lastName = document.getElementById("last_name").value;
+                    var email = document.getElementById("email").value;
+                    var username = document.getElementById("username").value;
+                    var password = document.getElementById("password").value;
+                    var confirmPassword = document.getElementById("cf_password").value;
+            
+                    if (firstName === "" || lastName === "" || email === "" || username === "" || password === "" || confirmPassword === "") {
+                        alert("Please fill in all required fields.");
+                        return false;
+                    }
+            
+                    if (password !== confirmPassword) {
+                        alert("Passwords do not match.");
+                        return false;
+                    }
+            
+                    return true;
+                }
+            </script>
             
         </div>
     </body>

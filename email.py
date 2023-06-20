@@ -37,7 +37,7 @@ while True:
     if (
         current_time.tm_wday == 1
         and current_time.tm_hour == 20
-        and current_time.tm_min == 9
+        and current_time.tm_min == 50
         and current_time.tm_sec == 0
     ):
         send_email()

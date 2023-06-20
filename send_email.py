@@ -36,8 +36,8 @@ while True:
     print(current_time)
     if (
         current_time.tm_wday == 0
-        and current_time.tm_hour == 21
-        and current_time.tm_min == 10
+        and current_time.tm_hour == 22
+        and current_time.tm_min == 0
         and current_time.tm_sec == 0
     ):
         send_email()

@@ -18,4 +18,4 @@ jobs:
         python-version: '3.x'  # Replace with your desired Python version
 
     - name: Send Email
-      run: python email.py  # Replace with the name of your Python script
+      run: python email.py

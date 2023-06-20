@@ -35,9 +35,9 @@ while True:
     current_time = time.localtime()
     print(current_time)
     if (
-        current_time.tm_wday == 0
-        and current_time.tm_hour == 22
-        and current_time.tm_min == 0
+        current_time.tm_wday == 1
+        and current_time.tm_hour == 15
+        and current_time.tm_min == 15
         and current_time.tm_sec == 0
     ):
         send_email()

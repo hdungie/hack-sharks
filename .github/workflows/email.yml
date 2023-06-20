@@ -2,7 +2,7 @@ name: Send email
 
 on: 
   schedule:
-    - cron: '30/5 20-22 * * *'  # Schedule to run every 5 minutes
+    - cron: '35/5 * * * *'  # Schedule to run every 5 minutes
 
 jobs:
   send_email:

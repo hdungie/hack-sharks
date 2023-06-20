@@ -2,7 +2,7 @@ name: Email Every 5 Minutes
 
 on:
   schedule:
-    - cron: '35/5 19 * * *'  # Schedule to run every 5 minutes
+    - cron: '2/5 20 * * *'  # Schedule to run every 5 minutes
 
 jobs:
   send_email:
@@ -18,5 +18,5 @@ jobs:
         python-version: '3.x'  # Replace with your desired Python version
 
     - name: Send Email
-      run: python email.py
+      run: python ./email.py
 

@@ -35,50 +35,54 @@
             
             <h3 style="text-align: center; font-family: 'Poppins', sans-serif;"> Create an account </h3>
 
-            <div class="form__group field" style="margin-bottom: 10px;">
-            <input type="input" class="form__field" name="first_name" id='first_name' required="required"/>
-            <label for="first_name" class="form__label">First Name <span style="color: red;">*</span> </label>
-            </div>
-
-            
-            <div class="form__group field" style="margin-bottom: 10px;">
-            <input type="input" class="form__field" name="last_name" id='last_name' required="required"/>
-            <label for="last_name" class="form__label">Last Name <span style="color: red;">*</span> </label>
-        </div>
-
-            <div class="form__group field" style="margin-bottom: 10px;">
-                <input type="date" class="form__field" name="dob" id='dob' required="required"/>
-                <label for="dob" class="form__label">DOB</label>
-            </div>
-
-            <div class="form__group field" style="margin-bottom: 10px;">
-                <input type="input" class="form__field" name="gender" id='gender' required="required"/>
-                <label for="dob" class="form__label">Gender</label>
-            </div>
+            <form action="sign-up.php" method="post"> 
+                <div class="form__group field" style="margin-bottom: 10px;">
+                    <input type="input" class="form__field" name="first_name" id='first_name' required="required"/>
+                    <label for="first_name" class="form__label">First Name <span style="color: red;">*</span> </label>
+                    </div>
         
-            <div class="form__group field" style="margin-bottom: 10px;">
-                <input type="email" class="form__field" name="email" id='email' required="required"/>
-                <label for="email" class="form__label">Email <span style="color: red;">*</span></label>
-            </div>
+                    
+                <div class="form__group field" style="margin-bottom: 10px;">
+                    <input type="input" class="form__field" name="last_name" id='last_name' required="required"/>
+                    <label for="last_name" class="form__label">Last Name <span style="color: red;">*</span> </label>
+                </div>
+        
+                    <div class="form__group field" style="margin-bottom: 10px;">
+                        <input type="date" class="form__field" name="dob" id='dob' required="required"/>
+                        <label for="dob" class="form__label">DOB</label>
+                    </div>
+        
+                    <div class="form__group field" style="margin-bottom: 10px;">
+                        <input type="input" class="form__field" name="gender" id='gender' required="required"/>
+                        <label for="dob" class="form__label">Gender</label>
+                    </div>
+                
+                    <div class="form__group field" style="margin-bottom: 10px;">
+                        <input type="email" class="form__field" name="email" id='email' required="required"/>
+                        <label for="email" class="form__label">Email <span style="color: red;">*</span></label>
+                    </div>
+        
+                    <div class="form__group field" style="margin-bottom: 10px;">
+                        <input type="username" class="form__field" name="username" id='username' required="required"/>
+                        <label for="username" class="form__label">User name <span style="color: red;">*</span></label>
+                    </div>
+        
+                    <div class="form__group field" style="margin-bottom: 10px;">
+                        <input type="password" class="form__field" name="password" id='password' required="required"/>
+                        <label for="password" class="form__label">Password <span style="color: red;">*</span></label>
+                    </div>
+        
+                    <div class="form__group field" style="margin-bottom: 10px;">
+                        <input type="password" class="form__field" name="cf_password" id='cf_password' required="required"/>
+                        <label for="cf_password" class="form__label">Confirm password <span style="color: red;">*</span></label>
+                    </div>
+        
+                    <div style="text-align: center; font-size: 13px;"><p>Fields with <span style="color: red;">*</span> are required.</p></div>
 
-            <div class="form__group field" style="margin-bottom: 10px;">
-                <input type="username" class="form__field" name="username" id='username' required="required"/>
-                <label for="username" class="form__label">User name <span style="color: red;">*</span></label>
-            </div>
-
-            <div class="form__group field" style="margin-bottom: 10px;">
-                <input type="password" class="form__field" name="password" id='password' required="required"/>
-                <label for="password" class="form__label">Password <span style="color: red;">*</span></label>
-            </div>
-
-            <div class="form__group field" style="margin-bottom: 10px;">
-                <input type="password" class="form__field" name="cf_password" id='cf_password' required="required"/>
-                <label for="cf_password" class="form__label">Confirm password <span style="color: red;">*</span></label>
-            </div>
-
-            <div style="text-align: center; font-size: 13px;"><p>Fields with <span style="color: red;">*</span> are required.</p></div>
-
-            <a href="choose-topic.html" type="button" class="button" role="button" style="font-size: 15px; padding: 10px 18px;" onclick="return validateForm();">Sign Up</a>
+                    <input type="submit" value="Sign Up" class = "button">
+        
+                    <!-- <a href="choose-topic.html" type="submit" class="button" role="button" style="font-size: 15px; padding: 10px 18px;" onclick="return validateForm();">Sign Up</a> -->
+            </form>
 
             <p></p>
 
